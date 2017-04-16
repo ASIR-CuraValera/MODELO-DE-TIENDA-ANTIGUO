@@ -1,0 +1,436 @@
+*{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Ek Mukta', sans-serif;
+font-size: 18px;
+text-decoration: none;
+
+}
+
+html{
+
+	height: 100%;
+}
+
+body{
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+
+}
+
+/*--------------HEADER---------------------*/
+
+header{
+
+	width: 100%;
+	height: 17%;
+	border-top: 5px solid #a30000;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.30);
+	z-index: 1;
+	top: 0;
+	background-color: white;
+	position: relative;
+}
+
+
+header #logo{
+	max-width: 175px;
+
+}
+
+
+
+
+header h1{
+	
+	color: #222222;
+	font-size: 40px;
+
+}
+
+.fi-shopping-cart span,.barradentro,.fi-torsos-all span{
+
+display: block;
+
+}
+
+/*--------BOTON NAV------------*/
+
+.fi-list-bullet{
+
+	font-size: 30px;
+	color: rgba(34, 34, 34, 1.0);
+	color: #a30000;
+	font-family: "none";
+	cursor: pointer;
+
+}
+
+.fi-list-bullet:hover{
+
+
+	color: black;
+	transition: all 0.50s ease;
+
+}
+
+/*----------------------------------*/
+
+.barradentro{
+
+	border: 2px solid #e9e9e9;
+	width: 500px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #ebeced;
+	font-size: 19px;
+	outline: 0px;
+
+}
+
+
+/*REGISTRO Y CARRITOS*/
+
+
+.fi-torsos-all{
+
+
+	font-size: 25px;
+	color: #a30000;
+	cursor: pointer;
+
+
+}
+
+
+
+.fi-torsos-all:hover{
+
+	transition: all 0.50s ease;
+	color: black;
+
+}
+
+
+.fi-shopping-cart{
+	
+	cursor: pointer;
+	border: px solid black;
+	font-size: 25px;
+	color: #a30000;
+
+}
+
+.fi-shopping-cart:hover{
+
+ 	color: black;
+
+}
+
+/*------------------------------------------------*/
+
+/*------------------MAIN--------------------------*/
+
+main{
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	text-align: justify;
+	margin: 0 15px;
+	
+}
+
+main p{
+
+columns: 3;
+
+}
+
+/*-------------------------------------------------*/
+
+/*-----------------NAV PRINCIPAL-------------------*/
+
+.navbar{
+	
+	width: 20%;
+	height: 100%;
+	background-color: rgba(34, 34, 34,1);
+	display: flex;
+	flex-flow: column nowrap;
+	z-index: 4;
+	position: fixed;
+	
+	
+}
+
+
+.titulonav{
+
+	background-color: #a30000;
+	padding: 5px 35px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+  
+}
+
+nav h4{
+
+	color: white;
+	font-size: 19px;
+
+}
+
+#cerrar{
+
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+
+
+#cerrar:hover{
+	
+	color: black;
+	transition: all 0.50s ease;
+	
+}
+
+
+
+.navbar a{
+
+	padding: 6px 35px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	border-bottom: 1px solid #2d2d2d; 
+	vertical-align: center;
+	position: relative;
+}
+
+
+
+
+.navbar a:hover{
+
+	background-color: rgba(44,44,44,1) ;
+	color: #a30000;
+	transition: all 0.50s ease;
+	
+}
+
+
+
+.navbar a:hover:after{
+	
+	content: "";
+	width: 5px;
+	height: 100%;
+	background-color: #a30000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.50s ease;
+
+}
+
+
+a#ultimo{
+
+	border-bottom: none;
+
+}
+
+
+/*-----------------------------------------------*/
+/*--------------FOOTER--------------------------*/
+
+footer{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	border-top: 5px solid #beae9b;
+	background-color: #f3f3f3; 
+	line-height: 2 ;
+
+}
+
+
+footer nav {
+
+	color: rgba(0, 0, 0, 0.65);
+
+}
+
+
+footer nav a {
+
+	color: rgba(0, 0, 0, 0.65);
+
+}
+
+
+footer nav h3{
+
+	padding-top: 17px;
+	padding-bottom: 7px;
+
+}
+
+
+#quienes-somos {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 15px;
+
+}
+
+#quienes-somos i{
+
+	font-size: 18px;
+
+}
+
+#quienes-somos i:hover{
+
+	color: rgba(0, 0, 0, 1);
+	
+}
+
+
+#guia-de-compra{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 15px;
+
+}
+
+#conecta-con-nosotros{
+	
+	display: flex;
+	flex-direction: column;
+	order: 4;
+	justify-content: center;
+	margin: 0 15px;
+
+}
+
+#conecta-con-nosotros a{
+
+align-self: center;
+
+}
+
+#conecta-con-nosotros i{
+
+	font-size: 2.1rem;
+	display: flex;
+	justify-content: space-around;
+	cursor: pointer;
+
+}
+
+#mercamira{
+
+	margin: 0 15px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+
+.nav-derechos{
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border-top: 3px solid #beae9b;
+	order: 5;
+	align-self: flex-end;
+
+
+}
+
+.nav-derechos a{
+
+	color: rgba(0, 0, 0, 0.65);
+	padding: 0 8px;
+
+
+}
+
+.nav-derechos a:hover{
+
+	color: rgba(0, 0, 0, 1);
+
+
+}
+
+footer nav a:hover{
+color: rgba(0, 0, 0, 1);
+
+}
+
+footer #f:hover{
+color: #3b5998;
+
+
+}
+
+footer #t:hover{
+color: #5da9dd;
+
+
+}
+
+footer #i:hover{
+color:#a77a5b ;
+
+}
+footer #g:hover{
+
+color: #dc4a38;
+
+
+}
+
+
+#quienes-somos i:hover{
+
+	color: rgba(0, 0, 0, 1);
+
+}
+
+.nav-derechos a:hover{
+
+color: rgba(0, 0, 0, 1);
+
+
+}
+
+
+
+
+
+
